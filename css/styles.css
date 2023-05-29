@@ -1,0 +1,301 @@
+/* css geral da pagina */
+
+html{
+    font-family: 'Wix Madefor Display';
+    color: #373A3C;
+}
+
+a{
+    transition: 0.5s;
+}
+
+
+/* side bar da pagina */
+
+
+
+#sidebar{
+
+    position:fixed;
+    height: 700px;
+    width: 250px;
+    background-color: #b08e6b;  
+    padding-top: 40px;                  /* define as dimensões/distancia do elemento para a borda */
+}
+
+#sidebar h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#sidebar a{                         /* texto na barra lateral */
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    position: center;
+}
+
+#sidebar li{
+    padding: 20px;
+}
+
+#sidebar a:hover{                   /* transição de cor de cada icone da barra lateral */
+    color: black; 
+}
+
+.sidebar-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+}
+
+.logo-doceria {
+    width: 85px;
+    height: 85px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* conteudo da pagina */
+
+.conteudo{
+    position: absolute;
+    left: 280px;
+    width: calc(100% - 280px);
+}
+
+.conteudo h1, .conteudo h2{
+    color: #b08e6b;
+    margin-bottom: 30px;
+}
+
+.conteudo h1{
+    font-size: 39px;
+}
+
+.conteudo h2{
+    font-size: 39px;
+}
+
+/* sessao bem vindo */
+
+#sessao-bemvindo{
+    padding-left: 0;
+}
+
+.conteudo-sessao-bemvindo{
+    padding-left: 50px;
+}
+
+#sessao-bemvindo .banner{
+    height: 500px;
+    background-image: url(../img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sessao-bemvindo h1{
+    margin-top: 45px;
+}
+
+#sessao-bemvindo ::after, #sessao-sobre ::after{
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 40px;
+}
+
+.sessao-minibanner{
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.sessao-descricao{
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.sessao-descricao p{
+    line-height: 1;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.sessao-bemvindo-btn, form input[type-submit]{
+    background-color: #65350F;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0px 5px;
+    transition: .5s;
+    display: block;
+    width: 75px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+/* sessao sobre */
+
+#sessao-sobre .sessao-minibanner{
+        float:right;
+        margin-right: 50px;
+        background-image: url(../img/banner4.jpg);
+}
+
+#sessao-sobre .sessao-descricao{
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 460px);
+}
+
+/* galerias dos doces */
+
+.banner-galeria{
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+}
+
+#sessao-doces1, #sessao-doces2, #sessao-doces3{
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.doces1-imgs{
+    width: 18%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img1{
+    background-image: url(../img/galeria1.jpg);
+    margin-left: 0;
+}
+
+#img2{
+    background-image: url(../img/galeria2.jpg);
+
+}
+
+#img3{
+    background-image: url(../img/galeria3.jpg);
+
+}
+
+#img4{
+    background-image: url(../img/galeria4.jpg);
+
+}
+
+#img5{
+    background-image: url(../img/galeria5.jpg);
+    margin-left: 0;
+}
+
+.doces2-imgs{
+    width: 32%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img6{
+    background-image: url(../img/galeria6.jpg);
+
+}
+
+#img7{
+    background-image: url(../img/galeria7.jpg);
+
+}
+
+#img8{
+    background-image: url(../img/galeria8.jpg);
+    margin-left: 0;
+}
+
+.doces3-imgs{
+    width: 18%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img9{
+    background-image: url(../img/galeria9.jpg);
+
+}
+
+#img10{
+    background-image: url(../img/galeria10.jpg);
+
+}
+
+#img11{
+    background-image: url(../img/galeria11.jpg);
+}
+
+#img12{
+    background-image: url(../img/galeria12.jpg);
+    margin-left: 0;
+}
+
+/* area de contato */
+
+#form-contato{
+    width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea{
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Wix Madefor Display';
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus{
+    border-color: red;
+}
+
+#form-contato ::placeholder{
+    color: #b08e6b;
+
+}
+
+#form-contato input[type=submit]{
+    margin-left: 0;
+    font-size: 16px;
+    width: 80px;
+}
+
+/* copyright */
+
+footer{
+    height: 100px;
+    padding-top: 150px;
+    color: #b08e6b;
+}
+
+footer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+
