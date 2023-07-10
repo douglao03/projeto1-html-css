@@ -20,7 +20,7 @@ a{
     height: 700px;
     width: 250px;
     background-color: #b08e6b;  
-    padding-top: 40px;                  /* define as dimensões/distancia do elemento para a borda */
+    padding-top: 100px;                  /* define as dimensões/distancia do elemento para a borda */
 }
 
 #sidebar h1{
@@ -298,4 +298,6 @@ footer p{
     font-weight: bold;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
